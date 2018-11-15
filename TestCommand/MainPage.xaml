@@ -11,7 +11,7 @@
                     <ViewCell>
                         <StackLayout>
                             <Label Text="{Binding Name}" />
-                            <Button Text="Click" Command="{Binding DoCommand, Source={x:Reference TestPage}}" CommandParameter="{Binding .}" />
+                            <Button Text="Click" Command="{Binding BindingContext.DoCommand, Source={x:Reference TestPage}}" CommandParameter="{Binding .}" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
